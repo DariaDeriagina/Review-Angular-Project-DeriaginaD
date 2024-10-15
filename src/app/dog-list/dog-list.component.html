@@ -8,7 +8,7 @@
       <th>Age</th>
     </thead>
 <tbody>
-      <tr *ngFor="let dog of dogList">
+      <tr *ngFor="let dog of dogList" (click)="selectDog(dog)">
         <td> {{dog.id}}</td>
         <td> {{dog.name}}</td>
         <td> {{dog.breed}}</td>
