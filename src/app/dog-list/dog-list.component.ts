@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import {Pet} from '../Shared/pet';
 import {JsonPipe, NgForOf} from '@angular/common';
+import {DogDetailComponent} from '../dog-detail/dog-detail.component';
 
 @Component({
   selector: 'app-dog-list',
   standalone: true,
-  imports: [NgForOf, JsonPipe],
+  imports: [NgForOf, JsonPipe, DogDetailComponent],
   templateUrl: './dog-list.component.html',
   styleUrl: './dog-list.component.css'
 })
@@ -16,6 +17,12 @@ export class DogListComponent {
     {id:3, name: 'Opti', breed: 'Terrier', age: 7},
     {id:4, name: 'Dolly', breed: 'Pikangnese', age: 4}
   ];
+
+  selectedDog? :Pet;
+
+  selectDog(dog:Pet){
+    this.selectedDog=dog;
+  }
 
 
 }
