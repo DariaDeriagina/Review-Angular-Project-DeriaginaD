@@ -9,6 +9,6 @@ import {Pet} from '../Shared/pet';
   styleUrl: './dog-detail.component.css'
 })
 export class DogDetailComponent {
-  @Input dog?:Pet;
+  @Input() dog? :Pet;
 
 }
