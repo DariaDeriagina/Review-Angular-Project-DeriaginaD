@@ -11,13 +11,8 @@ import {DogDetailComponent} from '../dog-detail/dog-detail.component';
   styleUrl: './dog-list.component.css'
 })
 export class DogListComponent {
-  dogList:Pet[]=[
-    {id:1, name: 'Bruno', breed: 'Shitzhoo', age: 10},
-    {id:2, name: 'Max', breed: 'Apso', age: 1},
-    {id:3, name: 'Opti', breed: 'Terrier', age: 7},
-    {id:4, name: 'Dolly', breed: 'Pikangnese', age: 4}
-  ];
 
+dogList:Pet[]=[];
   selectedDog? :Pet;
 
   selectDog(dog:Pet){
