@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {DogListComponent} from './dog-list/dog-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  //in imports add DogListComponent
+  imports: [RouterOutlet, DogListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
