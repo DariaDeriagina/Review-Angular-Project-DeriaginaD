@@ -3,11 +3,12 @@ import {Pet} from '../Shared/pet';
 import {JsonPipe, NgForOf} from '@angular/common';
 import {DogDetailComponent} from '../dog-detail/dog-detail.component';
 import {DogService} from '../Services/dog.service';
+import {RouterLink} from '@angular/router';
 
 @Component({
   selector: 'app-dog-list',
   standalone: true,
-  imports: [NgForOf, JsonPipe, DogDetailComponent],
+  imports: [NgForOf, JsonPipe, DogDetailComponent, RouterLink],
   templateUrl: './dog-list.component.html',
   styleUrl: './dog-list.component.css'
 })

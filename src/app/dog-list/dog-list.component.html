@@ -8,12 +8,17 @@
       <th>Age</th>
     </thead>
 <tbody>
-      <tr *ngFor="let dog of dogList" (click)="selectDog(dog)">
+      <tr *ngFor="let dog of dogList" [routerLink]="['/dogs', dog.id]">
         <td> {{dog.id}}</td>
         <td> {{dog.name}}</td>
         <td> {{dog.breed}}</td>
         <td> {{dog.age}}</td>
+</tr>
     </tbody>
   </table>
-<app-dog-detail [dog]="selectedDog"></app-dog-detail>
 </div>
+
+
+
+
+
