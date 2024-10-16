@@ -1,13 +1,13 @@
 import {Component, Input, OnInit} from '@angular/core';
 import {Pet} from '../Shared/pet';
 import {NgIf} from '@angular/common';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute, Router, RouterLink, RouterLinkActive} from '@angular/router';
 import {DogService} from '../Services/dog.service';
 
 @Component({
   selector: 'app-dog-detail',
   standalone: true,
-  imports: [NgIf],
+  imports: [NgIf, RouterLink, RouterLinkActive],
   templateUrl: './dog-detail.component.html',
   styleUrl: './dog-detail.component.css'
 })
