@@ -12,12 +12,11 @@ import {DogDetailComponent} from '../dog-detail/dog-detail.component';
 })
 export class DogListComponent {
 
-dogList:Pet[]=[];
-  selectedDog? :Pet;
+   dogList:Pet[]=[];
 
+  selectedDog? :Pet;
   selectDog(dog:Pet){
     this.selectedDog=dog;
   }
-
 
 }
